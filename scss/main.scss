@@ -1,8 +1,16 @@
+/*Variables*/
+$verde:  #00FF7F;
+$rosa:  #FF3985; 
+
+
+
 @import "./utilities/typo.scss";
 @import "./section/header";
 @import "./section/main";
 @import "./section/footer";
 @import "./section/_sedes";
+@import "./section/contacto";
+
 
 *{
     margin: 0;

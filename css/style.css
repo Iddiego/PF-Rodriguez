@@ -1,3 +1,4 @@
+/*Variables*/
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
 /*NAVBAR*/
@@ -69,7 +70,7 @@
   .footer img {
     width: 50px; }
 
-.basic-sedes {
+.basic {
   height: 100vh;
   background-image: linear-gradient(to top, #000000, #303030); }
 
@@ -171,6 +172,61 @@
       transform: scale(0.9);
       transition: 0.4s ease;
       background-image: url(../recursos/sede9.jpg); }
+
+.basic {
+  height: 100vh;
+  background-image: linear-gradient(to top, #000000, #303030); }
+
+.contacto-main {
+  position: absolute;
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  color: #303030;
+  font-family: "Didact Gothic", sans-serif;
+  gap: 20px; }
+  .contacto-main .oso {
+    width: 80px;
+    margin: 0; }
+  .contacto-main .contacto01 {
+    width: 250px;
+    height: 250px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: #00FF7F;
+    border-radius: 10px; }
+    .contacto-main .contacto01:hover {
+      transform: scale(0.9);
+      transition: 5seg ease-in-out; }
+  .contacto-main .contacto02 {
+    width: 250px;
+    height: 250px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: #FF3985;
+    border-radius: 10px; }
+    .contacto-main .contacto02:hover {
+      transform: scale(0.9);
+      transition: 5seg ease-in-out; }
+  .contacto-main .contacto03 {
+    width: 250px;
+    height: 250px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: white;
+    border-radius: 10px; }
+    .contacto-main .contacto03:hover {
+      transform: scale(0.9);
+      transition: 5seg ease-in-out; }
 
 * {
   margin: 0;
