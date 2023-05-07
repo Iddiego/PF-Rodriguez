@@ -11,15 +11,14 @@
 }
 
 .btn-unete{
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    padding-top: 12%;
     .textoboton{
         font-size: 50px;
         color: white;
-        font-family: 'Didact Gothic', sans-serif;
+        font-family:$typo-text;
     }
     
     .button{
@@ -30,14 +29,14 @@
         border-radius: 10px;
         border: none;
         font-size: 30px;
-        color: black;  
+        color: black;
+        &:hover{
+            background-color: #FF3985;
+            color: white;
+            transform: scale(1.05);
+            transition: .2s;
+        }
     }
     
-    .button:hover{
-        background-color: #FF3985;
-        color: white;
-        transform: scale(1.05);
-        transition: .2s;
-    }
 }
 

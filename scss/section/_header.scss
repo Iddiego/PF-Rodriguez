@@ -1,8 +1,6 @@
 
 /*NAVBAR*/
-.navbar-expand-lg{
-    background-color:none;
-}
+
 .ancho{
     max-width: 850px;
     .navbar-collapse{
@@ -11,7 +9,7 @@
         .nav-link{
             color: white;
             &:hover{
-                text-decoration: underline  #00FF7F;
+                text-decoration:solid;
                 color: #FF3985;
             }
         }

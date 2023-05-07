@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
 /*NAVBAR*/
-.navbar-expand-lg {
-  background-color: none; }
-
 .ancho {
   max-width: 850px; }
   .ancho .navbar-collapse {
@@ -12,7 +9,7 @@
     .ancho .navbar-collapse .nav-link {
       color: white; }
       .ancho .navbar-collapse .nav-link:hover {
-        text-decoration: underline  #00FF7F;
+        text-decoration: solid;
         color: #FF3985; }
 
 .logo {
@@ -30,15 +27,14 @@
   color: white; }
 
 .btn-unete {
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute; }
+  padding-top: 12%; }
   .btn-unete .textoboton {
     font-size: 50px;
     color: white;
-    font-family: 'Didact Gothic', sans-serif; }
+    font-family: "Didact Gothic", sans-serif; }
   .btn-unete .button {
     margin-top: 10px;
     width: 120px;
@@ -48,8 +44,23 @@
     border: none;
     font-size: 30px;
     color: black; }
-  .btn-unete .button:hover {
-    background-color: #FF3985;
-    color: white;
-    transform: scale(1.05);
-    transition: .2s; }
+    .btn-unete .button:hover {
+      background-color: #FF3985;
+      color: white;
+      transform: scale(1.05);
+      transition: .2s; }
+
+.footer {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .footer ul {
+    display: flex;
+    padding-right: 2%; }
+  .footer img {
+    width: 50px; }
