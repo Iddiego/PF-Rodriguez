@@ -1,0 +1,29 @@
+.basic{
+    height: 100vh;
+    background-image: linear-gradient(to top, #000000, #303030);
+}
+
+.video-page{
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10vh;
+
+    .reproductor{
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        align-items: start;
+        margin: 20px;
+        width: 250px;
+    }
+    .reproductor p{
+        color: white;
+        font-family: $typo-text;
+    }
+    .reproductor h1{
+        font-family: $typo-titulo;
+        color: $verde;
+    }
+}

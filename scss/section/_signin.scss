@@ -1,0 +1,58 @@
+.menu{
+    background-color: #000000;
+}
+   
+   .back-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -10;
+    }
+
+    .basic-signin{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000;
+        background-image: url(../recursos/Sign-In.png);
+        background-repeat: no-repeat;
+        color: white;
+        .signin{
+            display: flex;
+        }
+        .ingreso{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 40vh;
+            margin-top: -20vh;
+        }
+        .form-label{
+            color: $rosa;
+            font-family:'Quicksand', sans-serif;
+            font-family: 'Didact Gothic', sans-serif;
+            &:focus{
+                background-color: $verde;
+            }
+        }
+
+        .btn-primary{
+            background-color:$rosa;
+            border-color: $rosa;
+            &:hover{
+                background-color: $verde;
+            }
+        }
+
+     
+    }
+
+
+
