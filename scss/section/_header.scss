@@ -3,6 +3,9 @@
 
 .ancho{
     max-width: 850px;
+    .navbar-toggler{
+        background-color: #00FF7F;
+    }
     .navbar-collapse{
         flex-direction: row-reverse;
         font-family: $typo-titulo;
@@ -17,5 +20,5 @@
 }  
 
 .logo{
-    width: 100px;
+    width: 80px;
 }

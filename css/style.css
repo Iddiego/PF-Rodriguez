@@ -3,6 +3,8 @@
 /*NAVBAR*/
 .ancho {
   max-width: 850px; }
+  .ancho .navbar-toggler {
+    background-color: #00FF7F; }
   .ancho .navbar-collapse {
     flex-direction: row-reverse;
     font-family: "Quicksand", sans-serif; }
@@ -13,7 +15,7 @@
         color: #FF3985; }
 
 .logo {
-  width: 100px; }
+  width: 80px; }
 
 .bg {
   position: absolute;
@@ -33,6 +35,7 @@
   padding-top: 12%; }
   .btn-unete .textoboton {
     font-size: 50px;
+    font-weight: 400;
     color: white;
     font-family: "Didact Gothic", sans-serif; }
   .btn-unete .button {
@@ -61,6 +64,115 @@
   justify-content: space-around; }
   .footer ul {
     display: flex;
-    padding-right: 2%; }
+    padding-right: 2%;
+    list-style: none; }
   .footer img {
     width: 50px; }
+
+.basic-sedes {
+  height: 100vh;
+  background-image: linear-gradient(to top, #000000, #303030); }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2px 2px;
+  grid-template-areas: "img-1 img-2 img-3" "img-4 img-5 img-6" "img-7 img-8 img-9";
+  height: 500px;
+  margin-top: 5vh; }
+  .container .img-1 {
+    grid-area: img-1;
+    background-image: url(../recursos/alina-chernysheva-JA2S6sJWleg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 5px; }
+    .container .img-1:hover {
+      transform: scale(0.9);
+      transition: 0.4s ease;
+      background-image: url(../recursos/sede1.jpg); }
+  .container .img-2 {
+    grid-area: img-2;
+    background-image: url(../recursos/craig-lovelidge-COxd0Jbe7u8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 2px; }
+    .container .img-2:hover {
+      transform: scale(0.9);
+      transition: 0.4s ease;
+      background-image: url(../recursos/sede2.jpg); }
+  .container .img-3 {
+    grid-area: img-3;
+    background-image: url(../recursos/craig-lovelidge-WChqiwxP8cw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 2px; }
+    .container .img-3:hover {
+      transform: scale(0.9);
+      transition: 0.4s ease;
+      background-image: url(../recursos/sede3.jpg); }
+  .container .img-4 {
+    grid-area: img-4;
+    background-image: url(../recursos/humphrey-muleba-LOA2mTj1vhc-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 2px; }
+    .container .img-4:hover {
+      transform: scale(0.9);
+      transition: 0.4s ease;
+      background-image: url(../recursos/sede4.jpg); }
+  .container .img-5 {
+    grid-area: img-5;
+    background-image: url(../recursos/mohamed-fareed-rbSNsoXk-3A-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 2px; }
+    .container .img-5:hover {
+      transform: scale(0.9);
+      transition: 0.4s ease;
+      background-image: url(../recursos/sede5.jpg); }
+  .container .img-6 {
+    grid-area: img-6;
+    background-image: url(../recursos/samuel-girven-2e4lbLTqPIo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 2px; }
+    .container .img-6:hover {
+      transform: scale(0.9);
+      transition: 0.4s ease;
+      background-image: url(../recursos/sede6.jpg); }
+  .container .img-7 {
+    grid-area: img-7;
+    background-image: url(../recursos/samuel-girven-VJ2s0c20qCo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 2px; }
+    .container .img-7:hover {
+      transform: scale(0.9);
+      transition: 0.4s ease;
+      background-image: url(../recursos/sede7.jpg); }
+  .container .img-8 {
+    grid-area: img-8;
+    background-image: url(../recursos/sven-mieke-1MrMsNBcsYA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 2px; }
+    .container .img-8:hover {
+      transform: scale(0.9);
+      transition: 0.4s ease;
+      background-image: url(../recursos/sede8.jpg); }
+  .container .img-9 {
+    grid-area: img-9;
+    background-image: url(../recursos/sven-mieke-MsCgmHuirDo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 2px; }
+    .container .img-9:hover {
+      transform: scale(0.9);
+      transition: 0.4s ease;
+      background-image: url(../recursos/sede9.jpg); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
