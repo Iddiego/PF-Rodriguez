@@ -1,0 +1,23 @@
+
+/*NAVBAR*/
+.navbar-expand-lg{
+    background-color:none;
+}
+.ancho{
+    max-width: 850px;
+    .navbar-collapse{
+        flex-direction: row-reverse;
+        font-family: $typo-titulo;
+        .nav-link{
+            color: white;
+            &:hover{
+                text-decoration: underline  #00FF7F;
+                color: #FF3985;
+            }
+        }
+    }
+}  
+
+.logo{
+    width: 100px;
+}

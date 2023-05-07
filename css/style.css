@@ -1,5 +1,55 @@
-* {
-  margin: 0;
-  padding: 0; }
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+/*NAVBAR*/
+.navbar-expand-lg {
+  background-color: none; }
 
-  
+.ancho {
+  max-width: 850px; }
+  .ancho .navbar-collapse {
+    flex-direction: row-reverse;
+    font-family: "Quicksand", sans-serif; }
+    .ancho .navbar-collapse .nav-link {
+      color: white; }
+      .ancho .navbar-collapse .nav-link:hover {
+        text-decoration: underline  #00FF7F;
+        color: #FF3985; }
+
+.logo {
+  width: 100px; }
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  text-decoration: none;
+  color: white; }
+
+.btn-unete {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute; }
+  .btn-unete .textoboton {
+    font-size: 50px;
+    color: white;
+    font-family: 'Didact Gothic', sans-serif; }
+  .btn-unete .button {
+    margin-top: 10px;
+    width: 120px;
+    height: 50px;
+    background-color: #00FF7F;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    color: black; }
+  .btn-unete .button:hover {
+    background-color: #FF3985;
+    color: white;
+    transform: scale(1.05);
+    transition: .2s; }
