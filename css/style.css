@@ -228,6 +228,24 @@
       transform: scale(0.9);
       transition: 5seg ease-in-out; }
 
+@media (max-width: 784px) {
+  .contacto-main {
+    position: absolute;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    color: #303030;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: small;
+    gap: 5px;
+    flex-direction: column-reverse; }
+    .contacto-main .oso {
+      width: 50px;
+      margin: 0; } }
+
 .basic {
   height: 100vh;
   background-image: linear-gradient(to top, #000000, #303030); }
@@ -252,49 +270,105 @@
     font-family: "Quicksand", sans-serif;
     color: #00FF7F; }
 
+@media (max-width: 784px) {
+  .video-page {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10vh;
+    justify-items: center;
+    align-items: center; }
+    .video-page .reproductor {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+      width: auto; }
+    .video-page .reproductor p {
+      color: white;
+      font-family: "Didact Gothic", sans-serif;
+      text-align: center;
+      width: 70%; }
+    .video-page .reproductor h1 {
+      font-family: "Quicksand", sans-serif;
+      color: #00FF7F;
+      text-align: center; }
+  .motivacion {
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden; }
+    .motivacion .videop {
+      width: 100%;
+      height: 100vh; } }
+
 .menu {
   background-color: #000000; }
 
-.back-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -10; }
-
 .basic-signin {
+  color: white;
   width: 100%;
-  height: 100vh;
-  position: relative;
-  padding: 0 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: auto;
   background-color: #000000;
-  background-image: url(../recursos/Sign-In.png);
-  background-repeat: no-repeat;
-  color: white; }
-  .basic-signin .signin {
-    display: flex; }
-  .basic-signin .ingreso {
+  display: flex;
+  gap: 0px;
+  align-items: center;
+  justify-content: space-between; }
+
+.backg {
+  margin: 0%;
+  width: auto;
+  height: 100%; }
+
+.ingreso {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0; }
+
+.form-label {
+  color: #FF3985;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Didact Gothic', sans-serif; }
+  .form-label:focus {
+    background-color: #00FF7F; }
+
+.btn-primary {
+  background-color: #FF3985;
+  border-color: #FF3985; }
+  .btn-primary:hover {
+    background-color: #00FF7F; }
+
+@media (max-width: 992px) {
+  .basic-signin {
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    position: relative;
-    left: 40vh;
-    margin-top: -20vh; }
-  .basic-signin .form-label {
-    color: #FF3985;
-    font-family: 'Quicksand', sans-serif;
-    font-family: 'Didact Gothic', sans-serif; }
-    .basic-signin .form-label:focus {
-      background-color: #00FF7F; }
-  .basic-signin .btn-primary {
-    background-color: #FF3985;
-    border-color: #FF3985; }
-    .basic-signin .btn-primary:hover {
-      background-color: #00FF7F; }
+    justify-content: space-evenly; }
+    .basic-signin .backg {
+      display: none; }
+    .basic-signin .signin {
+      display: flex;
+      align-items: center; } }
+
+@media (max-width: 1164px) {
+  .basic-signin {
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+  .backg {
+    margin: 0%;
+    width: 60vh;
+    height: 60%; } }
 
 * {
   margin: 0;
