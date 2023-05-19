@@ -1,12 +1,12 @@
 .footer{
-    width: 100%;
-    height: 100px;
-    position: absolute;
     bottom: 0;
     left: 0;
+    width: 100%;
+    height: 100px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    margin-top: 30px;
+
 
     ul{
         display: flex;
@@ -17,4 +17,29 @@
         width:50px;
 
     }
+}
+
+@media (max-width: 784px){
+
+    .footer{
+        width: 100%;
+        height: 100px;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+        ul{
+            display: flex;
+            padding-right: 2%;
+            list-style: none;
+        }
+        img{
+            width:40px;
+    
+        }
+    }
+
+
 }

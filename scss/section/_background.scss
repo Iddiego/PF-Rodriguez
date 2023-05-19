@@ -1,0 +1,22 @@
+.background{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    background-image: $degradado;
+    background-size: cover;
+
+}
+
+@media (max-width: 992px){
+
+    .background{
+        height: 100%;
+        background-image: $degradado;
+        background-size: cover;
+    }
+
+}
+
+    

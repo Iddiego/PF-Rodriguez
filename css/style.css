@@ -55,20 +55,35 @@
       transition: .2s; }
 
 .footer {
-  width: 100%;
-  height: 100px;
-  position: absolute;
   bottom: 0;
   left: 0;
+  width: 100%;
+  height: 100px;
   display: flex;
-  align-items: center;
-  justify-content: space-around; }
+  justify-content: center;
+  margin-top: 30px; }
   .footer ul {
     display: flex;
     padding-right: 2%;
     list-style: none; }
   .footer img {
     width: 50px; }
+
+@media (max-width: 784px) {
+  .footer {
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .footer ul {
+      display: flex;
+      padding-right: 2%;
+      list-style: none; }
+    .footer img {
+      width: 40px; } }
 
 .basic {
   height: 100vh;
@@ -173,12 +188,7 @@
       transition: 0.4s ease;
       background-image: url(../recursos/sede9.jpg); }
 
-.basic {
-  height: 100vh;
-  background-image: linear-gradient(to top, #000000, #303030); }
-
 .contacto-main {
-  position: absolute;
   margin-top: 20vh;
   display: flex;
   justify-content: center;
@@ -229,14 +239,17 @@
       transition: 5seg ease-in-out; }
 
 @media (max-width: 784px) {
+  .basic {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #000000, #303030); }
   .contacto-main {
-    position: absolute;
     margin-top: 5vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 500px;
+    height: 450px;
     color: #303030;
     font-family: "Didact Gothic", sans-serif;
     font-size: small;
@@ -246,9 +259,14 @@
       width: 50px;
       margin: 0; } }
 
-.basic {
-  height: 100vh;
-  background-image: linear-gradient(to top, #000000, #303030); }
+.bg-videos {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #000000, #303030);
+  background-size: cover; }
 
 .video-page {
   display: flex;
@@ -270,12 +288,45 @@
     font-family: "Quicksand", sans-serif;
     color: #00FF7F; }
 
-@media (max-width: 784px) {
+@media (max-width: 500px) {
   .video-page {
     display: flex;
-    flex-direction: column-reverse;
+    align-content: center;
+    justify-content: center;
     margin-top: 10vh;
-    justify-items: center;
+    flex-direction: column-reverse;
+    align-items: center; }
+    .video-page .reproductor {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      width: auto; }
+    .video-page .reproductor p {
+      color: white;
+      font-family: "Didact Gothic", sans-serif;
+      text-align: center;
+      width: 50%; }
+    .video-page .reproductor h1 {
+      font-family: "Quicksand", sans-serif;
+      color: #00FF7F;
+      text-align: center; }
+  .motivacion {
+    position: relative;
+    height: 0;
+    width: 100%;
+    height: auto; }
+    .motivacion .videop {
+      width: 100%;
+      height: 100%; } }
+
+@media (max-width: 992px) {
+  .video-page {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10vh;
+    flex-direction: column-reverse;
     align-items: center; }
     .video-page .reproductor {
       display: flex;
@@ -288,19 +339,19 @@
       color: white;
       font-family: "Didact Gothic", sans-serif;
       text-align: center;
-      width: 70%; }
+      width: 50%; }
     .video-page .reproductor h1 {
       font-family: "Quicksand", sans-serif;
       color: #00FF7F;
       text-align: center; }
   .motivacion {
-    position: relative;
-    padding-bottom: 50%;
-    height: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     overflow: hidden; }
     .motivacion .videop {
-      width: 100%;
-      height: 100vh; } }
+      width: 80%;
+      height: 50vh; } }
 
 .menu {
   background-color: #000000; }
@@ -369,6 +420,21 @@
     margin: 0%;
     width: 60vh;
     height: 60%; } }
+
+.background {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #000000, #303030);
+  background-size: cover; }
+
+@media (max-width: 992px) {
+  .background {
+    height: 100%;
+    background-image: linear-gradient(to top, #000000, #303030);
+    background-size: cover; } }
 
 * {
   margin: 0;

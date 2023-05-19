@@ -1,6 +1,7 @@
 /*Variables*/
 $verde:  #00FF7F;
-$rosa:  #FF3985; 
+$rosa:  #FF3985;
+$degradado:linear-gradient(to top, #000000, #303030) ;
 
 
 
@@ -12,6 +13,7 @@ $rosa:  #FF3985;
 @import "./section/contacto";
 @import "./section/videos";
 @import "./section/signin";
+@import "./section/background";
 
 *{
     margin: 0;
