@@ -353,8 +353,14 @@
       width: 80%;
       height: 50vh; } }
 
-.menu {
-  background-color: #000000; }
+.bg-sign {
+  background-color: #000000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 100vh;
+  background-size: cover; }
 
 .basic-signin {
   color: white;
@@ -363,19 +369,19 @@
   background-color: #000000;
   display: flex;
   gap: 0px;
-  align-items: center;
-  justify-content: space-between; }
+  justify-content: space-around;
+  align-items: center; }
 
 .backg {
   margin: 0%;
   width: auto;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
 .ingreso {
   width: 300px;
   display: flex;
   flex-direction: column;
-  position: relative;
   margin: 0; }
 
 .form-label {
@@ -394,8 +400,8 @@
 @media (max-width: 992px) {
   .basic-signin {
     color: white;
-    width: 100%;
-    height: 100vh;
+    width: 50%;
+    height: 50vh;
     background-color: #000000;
     display: flex;
     align-items: center;
